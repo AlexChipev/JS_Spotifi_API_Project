@@ -1,0 +1,43 @@
+<!doctype html>
+<html ng-app="Home_Page">
+<head>
+<title>Profile</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/styles-profile.css">
+
+</head>
+
+<body>
+  <div class="main" ng-controller="homeCtrl">
+      <header class="heading">
+          <div class="head-div">
+          <img class="spotifyImg" alt="image" src="img/Designbolts-Cute-Social-2014-Spotify.ico" width="40" heigth="40">
+          <div class="profile-pic">
+            <img src="img/Ninja-icon.png" >
+          </div>
+          <h1 ng-model="text">{{username}}</h1>
+          <img class="logout" alt="image" src="img/logout_user_login_account-512.png" width="40" height="40">
+          <h2 ng-model="text">{{message}}</h2>
+        </div>
+
+        <div class="search">
+          <!-- <form method='get' action='/query'> -->
+            <input ng-model="input" ng-keyup="keyUpFunc()" type="text" id="search" name="search" placeholder="Search">
+            <button ng-click="click()" class="search-btn" name="search" type="button">Search</button>
+          <!-- </form> -->
+          </div>
+      </header>
+
+        <div class="favourites-container">
+              <ul>
+                <li ng-repeat="track in tracks">
+                <div class="play-icon"><img src="img/btn-video-play.png" width="30" height="30"></div>
+                      {{track.name}} -- {{track.duration_ms}}</li>
+              </ul>
+          </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+      <script src="controllers/home_Ctrl.js"></script>
+</body>
+</html>

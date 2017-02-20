@@ -1,0 +1,170 @@
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Page Styles */
+
+body {
+    background-color: #000033;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main {}
+
+.heading {
+    background-color: hsla(0, 0%, 0%, 0.4);
+    height: 50px;
+    text-align: center;
+    border-bottom: 1px solid #bfbfbf;
+    display: block;
+    margin-bottom: 300px;
+}
+.head-div {
+  margin: 0 40%;
+  float: left;
+  position: absolute;
+}
+.spotifyImg {
+    margin-top: 5px;
+}
+
+h1 {
+    padding-top: 25px;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 110%;
+    color: hsla(0, 0%, 95%, 0.7);
+    width: 336px;
+    padding-bottom: 20px;
+}
+h2 {
+    padding-top: 25px;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 100%;
+    color: hsla(0, 100%, 50%,0.5);
+    width: 336px;
+    padding-bottom: 20px;
+}
+.dropdown, .dropdown-content, span {
+    color: hsla(0, 0%, 95%, 0.7);
+  font-family: inherit;
+  float: right;
+  padding-top: 100px;
+}
+
+.dropdown-content  a{
+  padding-top: 2px;
+  font-family: inherit;
+  color: hsla(0, 0%, 95%, 0.7);
+  text-decoration: none;
+  display: block;
+}
+
+.logout {
+  cursor: pointer;
+}
+.profile-pic {
+box-sizing: border-box;
+padding-top: 50px;
+
+}
+.profile-pic img {
+  border: 2px solid #bfbfbf;
+  border-radius: 50%;
+  width: 100px;
+}
+.search {
+    float: right;
+    display: block;
+    padding-top: 9px;
+    padding-bottom: 5px;
+    margin-right: 23px;
+}
+.search input {
+  background-color: hsl(0, 0%, 85%);
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  padding-top: 5px;
+  width: 200px;
+  margin-right: 10px;
+}
+input[type="text"]::-webkit-input-placeholder {
+    color: hsl(0, 0%, 50%) !important;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.search-btn {
+    color: hsl(0, 0%, 40%);
+    font-size: 85%;
+    text-align: center;
+    font-weight: bolder;
+    background: hsla(60, 100%, 80%, 0.8);
+    font-style: italic;
+    cursor: pointer;
+    padding: 0 15px;
+    line-height: 29px;
+    display: block;
+    width: 43px;
+    float: right;
+}
+
+.favourites-container ul {
+  color: hsla(0, 0%, 95%, 0.7);
+  width: 50%;
+}
+.favourites-container{
+  padding-left: 30%;
+}
+.favourites-container li{
+  background: hsla(0, 0%, 0%, 0.2);
+  border-top: 1px solid #404040;
+  border-bottom: 1px solid #404040;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  margin-bottom: 2px;
+}
+.play-icon img{
+  cursor: pointer;
+}
+.favourites-container p {
+padding-bottom: 2px;
+font-size: 120%;
+}
