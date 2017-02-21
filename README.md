@@ -1,3 +1,3 @@
-# JS_Spotifi_API_Project
+# JS_Spotify_API_Project
 
-JavaScript project using Node.js, MongoDB and AngularJS
+MEAN Stack JavaScript project

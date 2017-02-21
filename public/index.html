@@ -29,24 +29,16 @@
                 <div class="signUpForm">
                     <p class="signUpText">Sign up
                         <p>
-                          <form method='post' id='register' action="/register" >
+                          <form method='post' enctype="multipart/form-data" id='register' action="/register" >
                             <input type="text" name="userName" placeholder="User Name"><br>
                             <input type="text" name="email" placeholder="Email"><br>
                             <input type="password" name="password" placeholder="Password"><br>
                             <input type="password" name="confPassword" placeholder="Confirm Password">
-                            <input type="submit" class="signUp" value="Submit" />
+
                             <div class="avatar"><label>Select avatar: </label><br>
                             <input type="file" id='image' name="avatar" accept="image/*"  /></div>
+                            <input type="submit" class="signUp" value="Submit" />
                           </form>
-                            <!-- <p class="social-text">...or use social</p>
-                            <div class="social-background"> -->
-                              <!-- <a href="https://www.facebook.com/">
-                            <img class="facebook" src="C:\Users\Intel\Downloads\facebook-logo-png-2319.png" width="55" height="45">
-                          </a>
-                          <a href="https://twitter.com/">
-                            <img class="twitter" src="C:\Users\Intel\Downloads\Fasticon-Web-2-Twitter.ico" width="36" height="36">
-                          </a> -->
-                            <!-- </div> -->
                 </div>
                 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
                 <script src="controllers/login_Ctrl.js"></script>
