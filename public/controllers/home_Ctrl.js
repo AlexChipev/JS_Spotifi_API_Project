@@ -21,7 +21,7 @@ home_ctrl.controller('homeCtrl', ['$scope','$http', ($scope, $http) => {
   $scope.keyUpFunc = () => {
     if(event.keyCode === Key.ENTER) {
      let q = $scope.input;
-      search(q);
+     search(q);
     }
   }
 
@@ -81,13 +81,14 @@ home_ctrl.controller('homeCtrl', ['$scope','$http', ($scope, $http) => {
 
       return `${minutes}:${seconds}`;
   }
+
     $scope.clickToPlay = ($track) => {
 
-    $scope.link = $track.preview_url;
-    let el = angular.element.find('source');
     const $audio = $('audio')[0];
-  
+    $audio.src = $track.preview_url;
+
     $audio.load();
     $audio.play();
   }
+
 }])

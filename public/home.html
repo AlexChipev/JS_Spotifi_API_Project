@@ -21,24 +21,20 @@
         </div>
 
         <div class="search">
-          <!-- <form method='get' action='/query'> -->
             <input ng-model="input" ng-keyup="keyUpFunc()" type="text" id="search" name="search" placeholder="Search">
             <button ng-click="click()" class="search-btn" name="search" type="button">Search</button>
-          <!-- </form> -->
           </div>
       </header>
 
         <div class="favourites-container">
               <ul>
-                <li ng-repeat="track in tracks" ng-click="clickToPlay(track)">
+                <li id='li' ng-repeat="track in tracks" ng-click="clickToPlay(track)">
                 <div class="play-icon"><img  src="img/btn-video-play.png" width="30" height="30"></div>
-                      {{track.name}} -- {{track.duration_ms}}</li>
+                      {{track.name}}<div class="duration">{{track.duration_ms}}</div></li>
               </ul>
           </div>
       </div>
-      <audio controls>
-          <source ng-src="{{link}}" type="audio/mpeg" alt="Description">
-              Your browser does not support the audio element.
+      <audio class="player" ng-src="{{src}}" controls>
       </audio>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>

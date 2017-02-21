@@ -139,9 +139,9 @@ input[type="text"]::-webkit-input-placeholder {
     font-style: italic;
     cursor: pointer;
     padding: 0 15px;
-    line-height: 29px;
+    line-height: 26px;
     display: block;
-    width: 43px;
+    width: 80px;
     float: right;
 }
 
@@ -160,11 +160,20 @@ input[type="text"]::-webkit-input-placeholder {
   padding-bottom: 10px;
   text-align: center;
   margin-bottom: 2px;
+  cursor: pointer;
 }
 .play-icon img{
   cursor: pointer;
 }
+.duration {
+  float: right;
+}
 .favourites-container p {
 padding-bottom: 2px;
 font-size: 120%;
+}
+.player {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 40%;
 }

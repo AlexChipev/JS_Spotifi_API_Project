@@ -2,7 +2,6 @@ let express = require('express');
 let bodyParser = require('body-parser');
 let path = require('path');
 let mongoose = require('mongoose');
-let fs = require('fs-extra');
 let action = require('./public/modules/action');
 let get = require('./public/modules/getters');
 let multer  = require('multer')

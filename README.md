@@ -1,3 +1,3 @@
 # JS_Spotify_API_Project
 
-MEAN Stack JavaScript project
+Using MEAN Stack technologies and Spotify API
